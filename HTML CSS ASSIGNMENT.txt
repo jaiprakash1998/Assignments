@@ -1,0 +1,286 @@
+HTML & CSS ASSIGNMENT
+
+1. A Tribute Page
+
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+#main{  background-color: gray;  text-align: center; border-radius:10px; }
+#title{  font-size: 36px; }
+img{  max-height: 100%;  margin:0 auto;  height:auto; } </style>
+</head>
+<body>
+<div id="main">
+<div id="title">Dr. Norman Borlaug</div>
+<div id="img-div">
+<img src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" id="image"><br>
+<caption id="img-caption"> Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat 
+yields - part of his life-long war on hunger.</caption></div>
+<p id="tribute-info">sample info
+<a href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">know more</a></p>
+</div></body></html>
+
+2. Webpage Including Form 
+
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+body{text-align: left;	background-color: grey;font-family: sans-serif,monospace;color: white;	}</style>
+</head>
+<body>
+<h1 id="title">Free code camp survey form</h1>
+<p id="description">Thank you for taking the time to improve the platform</p>
+<form id="survey-form">
+<fieldset>
+<label for="name">First Name:</label>
+<input type="text" name="fname" id="name" placeholder="enter name"><br>
+<label for="email">Email address:</label>
+<input type="email" name="mail" id="email" required="yes" placeholder="enter Email"><br>
+<label for="number">Phone:</label>
+<input type="number" name="num" id="number" min="1" max="100" placeholder="enter phone number"><br>
+<select name="gender" id="dropdown">
+	<option value="male">Male</option>
+	<option value="female">Female</option>
+	<option value="others">Others</option>
+</select><br>
+would you recommend freecodecamp:<br>
+<input type="radio" name="recommend" value="definately">Definately
+<input type="radio" name="recommend" value="maybe">Maybe
+<input type="radio" name="recommend" value="definitely">Not sure<br>
+What technologies you are interested in:<br>
+<input type="checkbox" name="front" value="frontend">Front-End<br>
+<input type="checkbox" name="back" value="backend">Back-End<br>
+<input type="checkbox" name="php" value="php">php<br>
+<input type="checkbox" name="html" value="html">html<br>
+<textarea name="comments" placeholder="enter text"></textarea><br>
+<input type="submit" name="click" id="submit" value="submit the form"></fieldset></form></body></html>
+
+
+
+3. Parallax Website 
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parallax website</title>
+<style type="text/css">
+body,html{height: 100%;margin: 0;font-family: sans-serif;	}
+#img{background-attachment: fixed;opacity: 0.7;position: relative;background-size: cover;background-position: center;
+background-repeat: no-repeat; }
+.img1{background: url("1.jpg");min-height: 100%;}
+.img2{background: url("2.jpg");min-height:400px;}
+.img3{background: url("3.jpg");min-height: 300px;}
+#section{background-color: gray;color: white;padding: 50px 80px;text-align: center;	}
+#p{position: absolute;text-align: center;background-color: gray;	text-transform: uppercase;top: 50%;
+width: 50%;	font-size:27px;	letter-spacing:8px;right: 25%;	}</style></head>
+<body>
+<div id="img" class="img1">
+<div id="p">	<p>lorem ipsem</p>	</div></div>
+<div id="section">
+<p style="padding: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div id="img" class="img2"></div>
+<div id="section">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div id="img" class="img3"></div>
+<div id="section">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div></body></html>
+
+
+4. Landing Page 
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Landing Page</title>
+<style type="text/css">
+input{padding: 10px;opacity: 0.8;border: 1px solid green;border-radius: 5px;}
+body,html{height: 100%;margin: 0;font-family: "Lato",sans-serif;}
+#img{background-attachment: scroll;background-repeat: no-repeat;background-size: cover;position: relative;}
+.img{background: url("2.jpg");min-height: 100%;}
+#p{position: absolute;top: 45%;text-align: center; font-size: xx-large;padding: 10px;right: 45%;left:45%;font-family:
+"Lato",sans-serif;width: 10%;}
+#section{margin: 0;padding: 50px 80px; border: 0;background-color: gray;color: #fff;text-align: justify;border-bottom: 1px 
+solid white;}
+#menu{display: flex;margin: 0;padding: 0;text-align: justify;border-bottom: 1px solid white;}
+#menu-item{width: 33%;background-color: #ed7014;padding: 10px 20px;color: white;}
+#menu-item2{width: 33%;background-color: #ed7014;padding: 10px 20px;color: white;}
+#footer{background: gray;margin: 0;display: flex;text-align: center;justify-content: center;}</style></head>
+<body>
+<div id="img" class="img">
+<div id="p">
+<p>A Sample Landing Page</p>
+<a href="#"><input type="submit" value="Know More"></a><br>	</div></div>
+<div id="section">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<section id="menu">
+<div id="menu-item">
+<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+liqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+ aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum.</P></div>
+<div id="menu-item2">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+ aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div id="menu-item">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+ aliqua. Ut enim ad minim veniam, 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div></section>
+<div id="section">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	</div>
+<div id="footer">
+<h1><span style="color: white;">ACME</span> Tech Solutions</h1></div></body></html>
+
+5. An Event or Conference Webpage
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conference Page</title>
+	<style type="text/css">
+		body,html{margin: 0;background-color: darkslategray;}
+		#header{display: flex; flex-direction: row;justify-content: space-around;background-color: darkslategray;color: silver;padding: 20px;align-items: center;width: 60%;margin: auto;}
+		#header a{color: silver;text-decoration: none;padding: 0px 10px;font-family: sans-serif;}
+		#header a:hover{color: gray;}
+		#info{background-color: darkslategray;color: silver;padding: 50px 40px;text-align: center;font-family: sans-serif;width: 60%;margin: auto;text-align: center;}
+		input{color: silver;background-color:darkslategray;border: 1px solid silver;padding: 10px 20px;border-radius: 5px;font-size: 24px;}
+		#menu{display: flex;flex-direction: row;background-color: silver; padding: 20px;justify-content: space-around;}
+		#menu-item{width: 20%;color: darkslategray;background-color: silver;border-radius: 5px;}
+		#menu-item img{width: 100%;border-radius: 5px;}
+		#menu-item h5{font-family: sans-serif;}
+		#footer{display: flex;width: 70%;margin: auto;justify-content: space-around;padding: 20px;align-items: center;color: silver;}
+		#footer a{text-decoration: none;color: silver;padding: 0px 10px;font-family: sans-serif;}
+		#footer a:hover{color: gray;}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div><h1>Business Conference</h1></div>
+		<div>
+			<a href="#">HOME</a>
+			<a href="#">ABOUT-US</a>
+			<a href="#">CONTACT</a>
+			<a href="#">BLOG</a>
+		</div>
+	</div>
+	<div id="info">
+		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. </h4>
+		<input type="button" value="Know More">
+	</div>
+	<div id="menu">
+		<div id="menu-item">
+			<h5>Speakers</h5>
+			<img src="1.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+			</p>
+		</div>
+		<div id="menu-item">
+			<h5>Schedule</h5>
+			<img src="1.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+			</p>
+		</div>
+		<div id="menu-item">
+			<h5>Venue</h5>
+			<img src="1.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+			</p>
+		</div>
+	</div>
+	<div id="footer">
+		<pre>@Business Conference</pre>
+		<nav>
+			<a href="#">HOME</a>
+			<a href="#">ABOUT-US</a>
+			<a href="#">CONTACT</a>
+			<a href="#">BLOG</a>
+		</nav>
+	</div>
+</body>
+</html>
+
+
+8. Photography Site 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photography Page</title>
+	<style type="text/css">
+		body,html{margin: 0;background-color: #eee;overflow-x: hidden;}
+		#front{height: 100%;width: 60%;display: flex;margin: auto;align-items: center;background-color: white;box-shadow: 0px 0px 20px gray;}
+		#front-text{width: 100%;background-color: white;color: black;text-align: center;}
+		#front img{background-size: cover;width: 100%;height: 100%;}
+		#bar{width: 100%;background-color: gray;color: white;text-align: center;margin: auto;padding: 20px 0px;font-size: 18px;}
+		#menu{margin: auto;width: 65%;text-align: center;background-color: white;box-shadow: 0px 0px 20px gray;}
+		#menu img{width: 100%;height: 500px;}
+		#footer{text-align: center;}
+	</style>
+</head>
+<body>
+	<div id="front">
+		<div id="front-text">
+			<p style="font-size: 24px;font-family: sans-serif;">ACME PHOTOGRAPHY</p>
+			<span style="color: gray;">Beautiful Natural Photography</span><br><br>
+			<input type="button" value="Know more" style="padding: 10px 20px;">
+		</div>
+		<div id="front-img">
+			<img src="p.jpg">
+		</div>
+	</div>
+	<div id="bar"><p>| Our Work |</p></div>
+	<div id="menu">
+		<img src="1.jpg">
+		<h3>Photo One</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+	</div>
+	<div id="menu">
+		<img src="2.jpg">
+		<h3>Photo Two</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+	</div>
+	<div id="menu">
+		<img src="3.jpg">
+		<h3>Photo Three</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+	</div>
+	<div id="menu">
+		<img src="1.jpg">
+		<h3>Photo Four</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+	</div>
+	<div id="footer">
+		<p><h2>Get In Touch</h2><br>Email or call us to set up a consult<br>Email: contact@acmephotos.test<br>Phone: (617) 555-5555</p></div>
+</body>
+</html>
+
+
