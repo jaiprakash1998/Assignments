@@ -1,0 +1,159 @@
+JAVASCRIPT OBJECT ASSIGNMENT
+
+1. Make a Rectangle class that stores a width and a height. Make a few instances and print out the properties. Modify a few of the properties and print out the results again.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var rectangle = {
+			//width:23,
+			//height:45,
+			width:20,
+			height:45,
+			area: function(){return this.width * this.height}
+		};
+		var x= rectangle;
+		document.write(x.area());
+	</script></body></html>
+
+
+2. Add a getArea method. Use the prototype property
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function rectangle(width,height) {
+  this.width=width;
+  this.height=height;
+}
+rectangle.prototype.getArea = function(){
+	return this.width*this.height;
+};
+
+var fred = new rectangle(56,89);
+document.getElementById("demo").innerHTML = fred.getArea();
+</script>
+
+</body>
+</html>
+
+3. Assuming that the Rectangle constructor takes a width and a height, why does the following output 20 instead of 200? 
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function rectangle(width,height) {
+  this.width=width;
+  this.height=height;
+}
+rectangle.prototype.getArea = function(){
+	return this.width*this.height;
+};
+var fred = new rectangle(4,5);
+fred.height=50;
+document.getElementById("demo").innerHTML = fred.getArea();
+</script>
+
+</body>
+</html>
+
+
+
+4. Make a variable whose value is an object with firstName and lastName properties, but don’t define a Person class first. Try looking up the first and last names. Try changing the last name. It seems very odd to Java programmers to make an object without first defining a class, but JavaScript programmers do this sort of thing all the time. 
+
+5. Try reading the middleName property from your variable above. Try assigning to the middleName property. Try reading the property again after you assign to it. Is this behavior a good thing or a bad thing? 
+
+6. Create a string that contains what looks like an object with firstName and lastName properties. Use “eval” to turn it into a real object, and test it the same way you did with the previous object that you created directly. 
+
+7. Do the same with JSON.parse. You have to follow strict JSON rules in this case.
+
+
+
+
+1. Write a JS program to create object of person with fields as follows:- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="dd"></p>
+<script>
+function person(fname,lname,age,skills,dateofbirth,address,married,profession)
+ {
+ this.fname=fname;
+ this.lname=lname;
+ this.age=age;
+ this.skills=skills;
+ this.dateofbirth=dateofbirth;
+ this.address=address;
+ this.married=married;
+ this.profession=profession;
+
+ }
+person1=new
+person("nikhil","goud",22,["c"],"24/10/1996",{city:"hyderabad",pincode:"521185"},"false","sr analyst")
+person2=new
+person("harish","chinna",21,"HTML","08/06/1997",{city:"Ameerpet",pincode:"500038"},"false","jr analyst")
+print=function()
+{
+ console.log(person1);
+ console.log(person2);
+}();
+var myArray =Object.values(person1);
+var myArray2 =Object.values(person1);
+document.getElementById("demo").innerHTML=myArray;
+document.getElementById("dd").innerHTML=myArray2;
+</script>
+</body>
+</html>
+
+
+2. Modify the above program to create 2 objects, amitabh and abhishek, here abhishek has some common properties from amitabh, try to use it such common properties from amitabh instead of creating it in abhishek.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="dd"></p>
+<script>
+	function person(fname,lname,age,skills,dateofbirth,address,married,profession)
+ {
+ this.fname=fname;
+ this.lname=lname;
+ this.age=age;
+ this.skills=skills;
+ this.dateofbirth=dateofbirth;
+ this.address=address;
+ this.married=married;
+ this.profession=profession;
+ }
+amithab=new 	person("amithab","bachan",22,["c"],"24/10/1996",{city:"hyderabad",pincode:"521185"},"false","sr analyst")
+abhisheik=new person("abhisheik",21,"HTML","08/06/1997","false","jr analyst")
+var abhisheik=Object.create(amithab);
+print=function()
+{
+ console.log(amithab);
+ console.log(abhisheik.lname);
+ console.log(abhisheik.address);
+}();
+
+</script>
+</body>
+</html>
+
+
+
+
