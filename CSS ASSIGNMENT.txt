@@ -1,0 +1,74 @@
+CSS ASSIGNMENTS
+
+1. Write the CSS file for the following HTML page ?
+2. Write the CSS file for the following HTML page?
+3. Write the CSS file for the following HTML page to display the text ?
+4. Write the CSS file for the following HTML page to Add different colors to visited/unvisited links 
+5. Write the CSS file for the following HTML page?
+6. Write the CSS file for the following HTML page?
+7. Write the CSS file for the following HTML page to set the color outline.
+8. Write the CSS file for the following HTML page to set the border width of the page.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		a:active{color: gray;}
+		a:hover{color: blue;}
+		a:visited{color: green;}
+		#tr{font-weight: bolder;}
+		#table{border-collapse: collapse;}
+		#tb{border-collapse: separate;border-color: green;font-family: sans-serif;}
+		#p{outline: 2px dotted green;border: 3px solid orange;}
+		#b1{border: 5px solid black;background: aqua;}
+		#b2{border: 3px solid black;background: aqua;}
+		#b3{border: 1px solid black;background: aqua;}
+		#b4{border: 0;background: aqua;}
+	</style>
+</head>
+<body>
+	<!-- QUESTION 1-->
+	<div style="background-color: gray;">
+		<h2 style="background-color: lightblue;">
+			Css background color example!!
+		</h2>
+		<p>we are in div element</p>
+		<p style="background-color: aqua;">this paragraph has its own color</p>
+		<p>we're still in div element</p>
+	</div>
+	<!-- 	QUESTION 2-->
+	<h1>This is Heading 1</h1>
+	<s><h2>This is Heading 2</h2></s>
+	<u><h3>This is Heading 3</h3></u>
+	<h4>This is Heading 4</h4>
+	<!-- QUESTION 3 -->
+	<p style="text-transform: uppercase;">this is some text</p>
+	<p style="text-transform: capitalize;">this is some text</p>
+	<p style="text-transform: lowercase;">THIS IS SOME TEXT</p>
+	<!-- QUESTION 4-->
+	<a href="#">this is a link</a><br>
+	<!-- QUESTION 5-->
+	<table id="table" border="1">
+		<tr id="tr"><td>FirstName</td><td>LastName</td></tr>
+		<tr><td>Peter</td><td>Griffin</td></tr>
+		<tr><td>Lois</td><td>Griffin</td></tr>
+	</table>
+	<!-- QUESTION 6-->
+	<table id="tb" border="1">
+		<tr style="background-color: green;"><td>FirstName</td><td>LastName</td><td>Savings</td></tr>
+		<tr><td>Peter</td><td>Griffin</td><td>$100</td></tr>
+		<tr><td>Lois</td><td>Griffin</td><td>$150</td></tr>
+		<tr><td>joe</td><td>sawanson</td><td>$300</td></tr>
+		<tr><td>cleveland</td><td>Brown</td><td>$250</td></tr>
+	</table>
+	<!-- QUESTION 7-->
+	<p id="p">Note: IE8 supports the outline properties only if a DOCTYPE is specified.</p>
+	<!-- QUESTION 8-->
+	<p id="b1">This is some text</p>
+	<p id="b2">this is some text</p>
+	<p id="b3">this is some text</p>
+	<p id="b4">this is some text</p>
+</body>
+</html>
+
